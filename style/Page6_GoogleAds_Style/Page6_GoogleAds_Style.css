@@ -1,1 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap");/*# sourceMappingURL=Page6_GoogleAds_Style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1401px;
+  margin: 0 auto;
+}
+@media (max-width: 1460px) {
+  .container {
+    max-width: 944px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 288px;
+  }
+}
+
+.show-ad__container {
+  min-height: 496px;
+  height: 100%;
+  text-align: center;
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.show-ad__container h2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #393A56;
+  margin-bottom: 55px;
+}
+.show-ad__container p {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #393A56;
+}
+@media (max-width: 1460px) {
+  .show-ad__container {
+    min-height: 408px;
+  }
+  .show-ad__container h2 {
+    font-size: 28px;
+  }
+  .show-ad__container p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .show-ad__container {
+    min-height: 384px;
+  }
+}
+@media (max-width: 767px) {
+  .show-ad__container {
+    min-height: 604px;
+    padding: 40px 0;
+  }
+  .show-ad__container h2 {
+    margin-bottom: 40px;
+  }
+  .show-ad__container p {
+    line-height: 24px;
+  }
+}
+
+.show-ad__show-items {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-content: space-between;
+}
+@media (max-width: 767px) {
+  .show-ad__show-items {
+    flex-wrap: wrap;
+  }
+}
+
+.show-item {
+  width: 320px;
+}
+@media (max-width: 1460px) {
+  .show-item {
+    width: 221px;
+  }
+}
+@media (max-width: 1023px) {
+  .show-item {
+    width: 157px;
+  }
+}
+@media (max-width: 767px) {
+  .show-item {
+    width: 139px;
+  }
+}
+.show-item img {
+  height: 120px;
+}
+@media (max-width: 767px) {
+  .show-item img {
+    height: 60px;
+  }
+}/*# sourceMappingURL=Page6_GoogleAds_Style.css.map */
