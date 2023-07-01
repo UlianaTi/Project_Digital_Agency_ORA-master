@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&display=swap');
+@import '../vars';
+@import '../template';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    max-width: $container-xl;
+    margin: 0 auto;
+    @media (max-width:$l) {
+        max-width: $container-l;
+    }
+    @media (max-width: $m) {
+        max-width: $container-m;
+    }
+    @media (max-width: $s) {
+        max-width: $container-s;
+    }
+}
+
+.principles__container{
+    height: 784px;
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:$l) {
+        height: 596px;
+        padding: 60px 0;
+    }
+    @media (max-width: $m) {
+        height: 760px;
+        padding: 40px 0;
+    }
+    @media (max-width:$s) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1148px;
+        padding: 40px 0;
+    }
+    }
+
+
+.principles__img{
+    flex-basis: 50%;
+    max-width: 680px;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    @media (max-width:$l) {
+        max-width: 424px;
+    }
+    @media (max-width:$m) {
+        max-width: 306px;
+    }
+    @media (max-width:$s) {
+        max-width: 264px;
+        flex-basis:264px;
+    }
+}
+
+.principles__description{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+    }
+    p{
+        font-family:$font;
+        font-size: 20px;
+    }
+@media (max-width:$l) {
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 16px;
+    }
+    @media (max-width:$s) {
+        flex-grow: 1;
+        h2{
+            line-height: 36px;
+        }
+        p{
+            line-height: 24px;
+        }
+    }
+}
+
+}
+
+.principles__main-block{
+    background-color: $bg_light-beige;
+    border: 1px solid $light_basic;
+    border-radius: 1em;
+    font-family: $font;
+    padding: 30px;
+    @media (max-width:$l) {
+        padding: 16px;
+    }
+}
