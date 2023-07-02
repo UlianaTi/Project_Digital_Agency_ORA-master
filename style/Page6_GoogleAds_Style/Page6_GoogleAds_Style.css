@@ -112,4 +112,15 @@
   .show-item img {
     height: 60px;
   }
+}
+
+.ad-in-google__container {
+  min-height: 2600px;
+}
+.ad-in-google__container h2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 38px;
+  color: #393A56;
+  text-align: center;
+  padding: 80px 0 70px 0;
 }/*# sourceMappingURL=Page6_GoogleAds_Style.css.map */
