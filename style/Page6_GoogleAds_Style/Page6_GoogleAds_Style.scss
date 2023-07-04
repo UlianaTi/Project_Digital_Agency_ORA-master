@@ -33,14 +33,14 @@
        font-family: $font; 
        font-size: 38px;
        font-weight: 900;
-       color: $color1;
+       color: $purple_basic;
        margin-bottom: 55px;
     }
     p{
         font-family: $font; 
        font-size: 20px;
        font-weight: 700;
-       color: $color1; 
+       color: $purple_basic; 
     }
     @media (max-width:$l) {
         min-height: 408px;
@@ -95,18 +95,136 @@
     }
 }
 // <!-- 3й блок_Кому мы показываем -->
-
 //<!-- 5й блок_Что такое реклама -->
 .ad-in-google__container{
     min-height: 2600px;
     h2{
         font-family: $font;
         font-size: 38px;
-        color: $color1;
+        font-weight: 900;
+        color: $purple_basic;
         text-align: center;
         padding: 80px 0 70px 0;
+        @media (max-width:$l){
+            font-size: 28px;
+        }
     }
+    h3{
+        font-family: $font;
+        font-size: 26px;
+        font-weight: 700;
+        color: $purple_basic;
+        @media (max-width:$l){
+            font-size: 18px;
+        }
+    }
+    p{
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 400;
+        color: $purple_basic;
+        @media (max-width:$l){
+            font-size: 16px;
+        }
+    }
+    .ad-in-google__items{
+        .ad-in-google__item{
+            display: flex;
+            column-gap: 40px;
+            margin-bottom: 80px;
+        }
+            .ad-in-google__item:nth-child(even){
+            flex-direction: row-reverse;
+            }
+        .ad-in-google__img{
+            max-width: 799px;
+            width: 100%;
+            @media (max-width:$l){
+                max-width: 340px;
+            }
+            @media (max-width:$m){
+                max-width: 250px;
+            }
+            @media (max-width:$s){
+                max-width: 216px;
+            }
+        }
+    }  
+
 }
 
 //<!-- 5й блок_Что такое реклама -->
+//<!-- 8й блок_Что вы получаете в результате -->
+.results{
+    background-color: $lightgrey_basic;
+}
+.results__container{
+    min-height: 560px;
+    @media (max-width:$l){
+        min-height: 470px;
+    }
+    @media (max-width:$m){
+        min-height: 464px;
+    }
+    @media (max-width:$s){
+        min-height: 766px;
+    }
+.results__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 60px;
+    @media (max-width:$l){
+        gap: 40px;
+    }
+    @media (max-width:$l){
+        gap: 32px;
+    }
+    @media (max-width:$s){
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        row-gap: 20px;
+    }
 
+}
+    h2{
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+        color: $purple_basic;
+        text-align: center;
+        padding: 80px 0 70px 0;
+        @media (max-width:$l){
+            font-size: 28px;
+            padding: 50px 0 40px 0;
+        }
+        @media (max-width:$l){
+            padding: 45px 0 35px 0;
+        }
+    }
+    p{
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
+    }
+    @media (max-width:$l){
+        font-size: 16px;
+    }    
+}
+.results__item{
+    display: flex;
+    align-items: center;
+    @media (max-width:$s){
+        align-items: flex-start;
+    }
+}
+.results__image{
+    width: 60px;
+    @media (max-width:$s){
+        width: 48px;
+    } 
+}
+
+
+//<!-- 8й блок_Что вы получаете в результате -->

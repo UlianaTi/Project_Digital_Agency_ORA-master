@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+.principles {
+  background-color: #EDF4FA;
+}
+
 .container {
   max-width: 1401px;
   margin: 0 auto;
@@ -25,7 +29,7 @@
 }
 
 .principles__container {
-  height: 784px;
+  min-height: 784px;
   padding: 75px 0;
   display: flex;
   justify-content: space-between;
