@@ -2,26 +2,30 @@
 @import '../vars';
 @import '../template';
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
+
 // <!-- 3й блок_Кому мы показываем -->
-.container{
+.container {
     max-width: $container-xl;
     margin: 0 auto;
+
     @media (max-width:$l) {
         max-width: $container-l;
     }
+
     @media (max-width: $m) {
         max-width: $container-m;
     }
+
     @media (max-width: $s) {
         max-width: $container-s;
     }
 }
 
-.show-ad__container{
+.show-ad__container {
     min-height: 496px;
     height: 100%;
     text-align: center;
@@ -29,202 +33,261 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h2{
-       font-family: $font; 
-       font-size: 38px;
-       font-weight: 900;
-       color: $purple_basic;
-       margin-bottom: 55px;
+
+    h2 {
+        font-family: $font;
+        font-size: 38px;
+        font-weight: 900;
+        color: $purple_basic;
+        margin-bottom: 55px;
     }
-    p{
-        font-family: $font; 
-       font-size: 20px;
-       font-weight: 700;
-       color: $purple_basic; 
+
+    p {
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 700;
+        color: $purple_basic;
     }
+
     @media (max-width:$l) {
         min-height: 408px;
-        h2{
+
+        h2 {
             font-size: 28px;
-        };
-        p{
+        }
+
+        p {
             font-size: 16px;
         }
     }
+
     @media (max-width: $m) {
         min-height: 384px;
     }
+
     @media (max-width: $s) {
         min-height: 604px;
         padding: 40px 0;
-        h2{
+
+        h2 {
             margin-bottom: 40px;
         }
-        p{
+
+        p {
             line-height: 24px;
         }
-}
+    }
 }
 
-.show-ad__show-items{
+.show-ad__show-items {
     display: flex;
     justify-content: space-between;
+
     @media (max-width: $s) {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
     flex-grow: 1;
     align-content: space-between;
 }
 
-.show-item{
+.show-item {
     width: 320px;
-    @media (max-width:$l){
+
+    @media (max-width:$l) {
         width: 221px;
     }
-    @media (max-width:$m){
+
+    @media (max-width:$m) {
         width: 157px;
     }
+
     @media (max-width: $s) {
         width: 139px;
-        }
-    img{
-            height: 120px;
-            @media (max-width: $s) {
-                height: 60px;
+    }
+
+    img {
+        height: 120px;
+
+        @media (max-width: $s) {
+            height: 60px;
         }
     }
 }
+
 // <!-- 3й блок_Кому мы показываем -->
 //<!-- 5й блок_Что такое реклама -->
-.ad-in-google__container{
+.ad-in-google__container {
     min-height: 2600px;
-    h2{
+    @media (max-width:$l) {
+        min-height: 2045px;
+    }
+    @media (max-width:$l) {
+        min-height: 2036px;
+    }
+
+    h2 {
         font-family: $font;
         font-size: 38px;
         font-weight: 900;
         color: $purple_basic;
         text-align: center;
         padding: 80px 0 70px 0;
-        @media (max-width:$l){
+
+        @media (max-width:$l) {
             font-size: 28px;
         }
     }
-    h3{
+
+    h3 {
         font-family: $font;
         font-size: 26px;
         font-weight: 700;
         color: $purple_basic;
-        @media (max-width:$l){
+        margin-bottom: 35px;
+
+        @media (max-width:$l) {
             font-size: 18px;
+            margin: 24px 0;
         }
     }
-    p{
+
+    p {
         font-family: $font;
         font-size: 20px;
         font-weight: 400;
         color: $purple_basic;
-        @media (max-width:$l){
+        margin-bottom: 20px;
+
+        @media (max-width:$l) {
             font-size: 16px;
+            margin-bottom: 16px;
         }
     }
-    .ad-in-google__items{
-        .ad-in-google__item{
-            display: flex;
-            column-gap: 40px;
-            margin-bottom: 80px;
-        }
-            .ad-in-google__item:nth-child(even){
-            flex-direction: row-reverse;
-            }
-        .ad-in-google__img{
-            max-width: 799px;
-            width: 100%;
-            @media (max-width:$l){
-                max-width: 340px;
-            }
-            @media (max-width:$m){
-                max-width: 250px;
-            }
-            @media (max-width:$s){
-                max-width: 216px;
-            }
-        }
-    }  
+    .ad-in-google__item {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 55px;
 
+        @media (max-width:$s) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+    }
+
+    .ad-in-google__item:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    img {
+        width: 799px;
+
+        @media (max-width:$l) {
+            width: 542px;
+        }
+
+        @media (max-width:$m) {
+            width: 334px;
+        }
+
+        @media (max-width:$s) {
+            width: 288px;
+        }
+
+        .ad-in-google__text-block {
+            flex-grow: 1;
+        }
+    }
 }
-
 //<!-- 5й блок_Что такое реклама -->
+
 //<!-- 8й блок_Что вы получаете в результате -->
-.results{
-    background-color: $lightgrey_basic;
+.results {
+    background-image: url(/assets/img/Page6_GoogleAds_img/background/bg_lightblue.png);
 }
-.results__container{
+.results__container {
     min-height: 560px;
-    @media (max-width:$l){
+
+    @media (max-width:$l) {
         min-height: 470px;
     }
-    @media (max-width:$m){
+
+    @media (max-width:$m) {
         min-height: 464px;
     }
-    @media (max-width:$s){
+
+    @media (max-width:$s) {
         min-height: 766px;
     }
-.results__items{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-    gap: 60px;
-    @media (max-width:$l){
-        gap: 40px;
-    }
-    @media (max-width:$l){
-        gap: 32px;
-    }
-    @media (max-width:$s){
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content;
-        row-gap: 20px;
+
+    .results__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+
+        @media (max-width:$l) {
+            gap: 40px;
+        }
+
+        @media (max-width:$l) {
+            gap: 32px;
+        }
+
+        @media (max-width:$s) {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content;
+            row-gap: 20px;
+        }
     }
 
-}
-    h2{
+    h2 {
         font-family: $font;
         font-size: 38px;
         font-weight: 900;
         color: $purple_basic;
         text-align: center;
         padding: 80px 0 70px 0;
-        @media (max-width:$l){
+
+        @media (max-width:$l) {
             font-size: 28px;
             padding: 50px 0 40px 0;
         }
-        @media (max-width:$l){
+
+        @media (max-width:$l) {
             padding: 45px 0 35px 0;
         }
     }
-    p{
+
+    p {
         font-family: $font;
         font-size: 20px;
         font-weight: 700;
         color: $purple_basic;
     }
-    @media (max-width:$l){
+
+    @media (max-width:$l) {
         font-size: 16px;
-    }    
+    }
 }
-.results__item{
+
+.results__item {
     display: flex;
     align-items: center;
-    @media (max-width:$s){
+
+    @media (max-width:$s) {
         align-items: flex-start;
     }
 }
-.results__image{
+
+.results__image {
     width: 60px;
-    @media (max-width:$s){
+
+    @media (max-width:$s) {
         width: 48px;
-    } 
+    }
 }
-
-
 //<!-- 8й блок_Что вы получаете в результате -->

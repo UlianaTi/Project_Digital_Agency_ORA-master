@@ -117,6 +117,16 @@
 .ad-in-google__container {
   min-height: 2600px;
 }
+@media (max-width: 1460px) {
+  .ad-in-google__container {
+    min-height: 2045px;
+  }
+}
+@media (max-width: 1460px) {
+  .ad-in-google__container {
+    min-height: 2036px;
+  }
+}
 .ad-in-google__container h2 {
   font-family: "Inter", Arial, sans-serif;
   font-size: 38px;
@@ -135,10 +145,12 @@
   font-size: 26px;
   font-weight: 700;
   color: #393A56;
+  margin-bottom: 35px;
 }
 @media (max-width: 1460px) {
   .ad-in-google__container h3 {
     font-size: 18px;
+    margin: 24px 0;
   }
 }
 .ad-in-google__container p {
@@ -146,43 +158,56 @@
   font-size: 20px;
   font-weight: 400;
   color: #393A56;
+  margin-bottom: 20px;
 }
 @media (max-width: 1460px) {
   .ad-in-google__container p {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
-.ad-in-google__container .ad-in-google__items .ad-in-google__item {
+.ad-in-google__container .ad-in-google__item {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  margin-bottom: 80px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 55px;
 }
-.ad-in-google__container .ad-in-google__items .ad-in-google__item:nth-child(even) {
+@media (max-width: 767px) {
+  .ad-in-google__container .ad-in-google__item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+}
+.ad-in-google__container .ad-in-google__item:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.ad-in-google__container .ad-in-google__items .ad-in-google__img {
-  max-width: 799px;
-  width: 100%;
+.ad-in-google__container img {
+  width: 799px;
 }
 @media (max-width: 1460px) {
-  .ad-in-google__container .ad-in-google__items .ad-in-google__img {
-    max-width: 340px;
+  .ad-in-google__container img {
+    width: 542px;
   }
 }
 @media (max-width: 1023px) {
-  .ad-in-google__container .ad-in-google__items .ad-in-google__img {
-    max-width: 250px;
+  .ad-in-google__container img {
+    width: 334px;
   }
 }
 @media (max-width: 767px) {
-  .ad-in-google__container .ad-in-google__items .ad-in-google__img {
-    max-width: 216px;
+  .ad-in-google__container img {
+    width: 288px;
   }
+}
+.ad-in-google__container img .ad-in-google__text-block {
+  flex-grow: 1;
 }
 
 .results {
-  background-color: #EDF4FA;
+  background-image: url(/assets/img/Page6_GoogleAds_img/background/bg_lightblue.png);
 }
 
 .results__container {
