@@ -5,7 +5,7 @@
 }
 
 .principles {
-  background-image: url(../assets/img/Page1_Home_img/background/bg_lightblue.png);
+  background-image: url(../../assets/img/Page1_Home_img/background/bg_lightblue.png);
 }
 
 .container {
@@ -83,16 +83,15 @@
 
 .principles__description {
   flex-basis: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .principles__description h2 {
   font-family: "Inter", Arial, sans-serif;
   font-size: 38px;
   font-weight: 900;
   color: #393A56;
+  margin-bottom: 40px;
 }
 .principles__description p {
   font-family: "Inter", Arial, sans-serif;
@@ -118,16 +117,17 @@
     line-height: 24px;
   }
 }
-
-.principles__main-block {
+.principles__description .principles__main-block {
   background-color: #FBF7F1;
   border: 1px solid #8B9BAB;
   border-radius: 12px;
   font-family: "Inter", Arial, sans-serif;
   padding: 30px;
+  margin: 40px auto;
 }
 @media (max-width: 1460px) {
-  .principles__main-block {
+  .principles__description .principles__main-block {
     padding: 16px;
+    margin: 20px auto;
   }
 }/*# sourceMappingURL=Page1_Home_Style.css.map */
